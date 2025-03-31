@@ -1,75 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Java Application - Lab 2</title>
-  <style>
-    body { font-family: Arial; background-color: #f8f8f8; padding: 40px; }
-    h1 { color: #2c3e50; }
-    pre {
-      background-color: #eee;
-      padding: 15px;
-      border-radius: 5px;
-      overflow-x: auto;
-      white-space: pre-wrap;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Java App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+        }
+        pre {
+            border-radius: 8px;
+            padding: 15px;
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Lab 2 - Java Console Application</h1>
+    <h1>My First Java App</h1>
+    <p>This is a simple Java program that prints a message to the console.</p>
 
-  <p>This Java program asks the user for their name and surname, performs basic math operations, and displays results in the console.</p>
+    <pre><code class="language-java">
+package pl.pp;
 
-  <h2>Source Code:</h2>
-  <pre><code>
-package mySecondApp;
-
-import java.util.Scanner;
-
-public class Main {
+public class myFirstApp { 
 
     public static void main(String[] args) {
-
-        Scanner scanner = new Scanner(System.in); 
-
-        System.out.println("Please enter your name:");
-        String forename = scanner.nextLine();
-
-        System.out.println("Please enter your surname:");
-        String surname = scanner.nextLine();
-
-        System.out.println("Welcome " + forename + " " + surname);
-
-        double x = 10;
-        double y = 2;
-
-        var result = x + y;
-        System.out.println("x + y = " + result);
-
-        result = x - y;
-        System.out.println("x - y = " + result);
-
-        result = x * y;
-        System.out.println("x * y = " + result);
-
-        result = x / y;
-        System.out.println("x / y = " + result);
-
-        result = x % y;
-        System.out.println("x % y = " + result);
-
-        System.out.println("Enter two numbers separated by the Enter key:");
-        double num1 = scanner.nextDouble();
-        double num2 = scanner.nextDouble();
-
-        double sum = num1 + num2;
-        System.out.println("The sum of the two numbers is: " + sum);
-
-        scanner.close();
+        System.out.println("Hello Basics of Programming!");
     }
 }
-  </code></pre>
+    </code></pre>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-java.min.js"></script>
 
 </body>
 </html>
