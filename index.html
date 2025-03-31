@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Java Application - Lab 2</title>
+  <style>
+    body { font-family: Arial; background-color: #f8f8f8; padding: 40px; }
+    h1 { color: #2c3e50; }
+    pre {
+      background-color: #eee;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Lab 2 - Java Console Application</h1>
+
+  <p>This Java program asks the user for their name and surname, performs basic math operations, and displays results in the console.</p>
+
+  <h2>Source Code:</h2>
+  <pre><code>
+package mySecondApp;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in); 
+
+        System.out.println("Please enter your name:");
+        String forename = scanner.nextLine();
+
+        System.out.println("Please enter your surname:");
+        String surname = scanner.nextLine();
+
+        System.out.println("Welcome " + forename + " " + surname);
+
+        double x = 10;
+        double y = 2;
+
+        var result = x + y;
+        System.out.println("x + y = " + result);
+
+        result = x - y;
+        System.out.println("x - y = " + result);
+
+        result = x * y;
+        System.out.println("x * y = " + result);
+
+        result = x / y;
+        System.out.println("x / y = " + result);
+
+        result = x % y;
+        System.out.println("x % y = " + result);
+
+        System.out.println("Enter two numbers separated by the Enter key:");
+        double num1 = scanner.nextDouble();
+        double num2 = scanner.nextDouble();
+
+        double sum = num1 + num2;
+        System.out.println("The sum of the two numbers is: " + sum);
+
+        scanner.close();
+    }
+}
+  </code></pre>
+
+</body>
+</html>
